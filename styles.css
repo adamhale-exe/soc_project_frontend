@@ -1,0 +1,381 @@
+body {
+  margin: auto;
+  max-width: 400px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+}
+header{
+ max-width: 400px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  height: 72px;
+  width: 80vw;
+}
+
+.header {
+  display: flex;
+  width: 75vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo selector is a grid which contains both the compass and text */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -1rem;
+}
+
+/* Compass Selector is the compass image itself within the header  */
+.compass-logo {
+  width: 65px;
+}
+
+/* Text-logo selector is the text within the header displaying "soc projecthub" */
+.SOCProjectHub-icon {
+  display: flex;
+  align-items: center;
+}
+
+.text-logo {
+  width: 170px;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon li {
+  padding: 0;
+}
+.material-symbols-outlined {
+  transform: scale(1.75);
+  padding-right: 20px;
+  position: relative;
+  top: 0.2rem;
+  right: -4rem;
+}
+
+/* Drop-down menu */
+/* Target the main navigation menu item */
+.main-menu .menu-item a .material-symbols-outlined {
+  /* Add your styles for the menu icon here */
+  font-size: 24px;
+  color: #227b71;
+  display: flex;
+  align-items: center;
+  /* Add any other styles you want for the menu icon here */
+}
+
+/* Target the main menu list */
+.main-menu {
+  list-style: none;
+  text-align: right; /* Align the text to the right */
+}
+
+/* Target top-level menu items */
+.main-menu .menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+/* Target links within top-level menu items */
+.main-menu .menu-item a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Target dropdown menu items */
+.main-menu .menu-item .dropdown-menu li {
+  display: block;
+}
+
+/* Display the dropdown menu on hover */
+.main-menu .menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style for the dropdown menu itself */
+.main-menu .menu-item .dropdown-menu {
+  width: 50vw;
+  background: #ffffff;
+  color: #227b71;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
+  position: fixed;
+  right: 10%;
+  top: 5.5rem;
+  z-index: 999;
+  display: none;
+  right: 0; /* Position the dropdown to the right */
+  text-align: left;
+  /* Align the dropdown items to the left */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for the dropdown menu items */
+.main-menu .menu-item .dropdown-menu li a {
+  font-size: 16px; /* Adjust the font size for dropdown items */
+  text-align: left; /* Align the dropdown items to the left */
+  color: #227b71;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selector for the main html  */
+.main {
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #227b71;
+}
+
+.projects-title {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.projects-list {
+  list-style: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding for the list */
+  margin: auto;
+}
+
+.list-item {
+  background-color: #f9f9f9;
+  /* Set background color for list items */
+
+  /* Faint black border */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
+  /* Faint shadow */
+  margin: 10px;
+  /* Add margin around list items */
+  padding: 10px;
+  /* Add padding inside list items */
+
+  /* Center text inside list items */
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item:last-of-type {
+  margin-bottom: 100px;
+}
+
+.data-container {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding: 0;
+}
+
+.image-container {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  padding-left: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.suggested-p-image {
+  height: 50px;
+}
+
+/* .search-bar { */
+/* margin applied to give some distance between the logo  */
+/* margin-top: 1rem; */
+/* Align the search bar to the center of the page  */
+/* } */
+
+/* Selector for the main html  */
+
+.search {
+  display: flex;
+  grid-template-columns: 100%;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.search-bar {
+  /* position: relative; */
+  /* left: 7rem; */
+  width: 95vw;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.578);
+  background-color: #f4f4f4;
+  text-align: center;
+  height: 27px;
+  border-bottom: 1.5px solid #ccc;
+  max-width: 400px;
+}
+
+.search-bar::placeholder {
+  color: #227b71;
+  font-size: 15px;
+}
+
+.search-icon {
+  height: 1.1rem;
+  position: absolute;
+  top: 5.75rem;
+  padding-left: 0.5rem;
+}
+
+.detail-container {
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.detail-title,
+.detail-photo,
+.detail-url,
+.detail-lang,
+.detail-difficulty {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
+}
+
+.detail-image {
+  width: 100%;
+}
+
+.suggested-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
+.detail-title > h3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.detail-title > p {
+  padding-bottom: 8px;
+}
+
+.detail-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-url {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+
+.detail-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 76px;
+}
+
+.detail-lang,
+.detail-difficulty {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.border-black-2px {
+  border: black 2px solid;
+}
+
+footer {
+  background-color: #95d1ca;
+  margin: auto;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.6);
+  max-width: 400px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin: auto;
+  align-items: center;
+}
+
+.footer > svg {
+  width: 56px;
+}
