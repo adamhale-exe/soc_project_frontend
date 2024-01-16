@@ -9,7 +9,7 @@ const MediumButton = document.querySelector("#Medium");
 const DifficultButton = document.querySelector("#Difficult");
 // Function to do API call, retrieves json response and set it to the data variable
 
-const database = "https://projects-database.onrender.com"
+const database = "https://www.socprojecthub.betterbymiles.co.uk";
 
 async function getAllProjects() {
   const response = await fetch(`${database}/projects`, {
@@ -176,12 +176,9 @@ function deleteOldData() {
 
 // Create a function to get project by coding language
 async function getProjectsByDifficulty(level) {
-  const response = await fetch(
-    `${database}/projects/difficulty/${level}`,
-    {
-      method: "GET",
-    }
-  );
+  const response = await fetch(`${database}/projects/difficulty/${level}`, {
+    method: "GET",
+  });
   const data = await response.json();
   console.log(data.data);
   return data.data;
@@ -189,12 +186,9 @@ async function getProjectsByDifficulty(level) {
 
 // Create a function to get project by difficulty
 async function getProjectsByLanguage(lang) {
-  const response = await fetch(
-    `${database}/projects/language/${lang}`,
-    {
-      method: "GET",
-    }
-  );
+  const response = await fetch(`${database}/projects/language/${lang}`, {
+    method: "GET",
+  });
   const data = await response.json();
   console.log(data.data);
   return data.data;
