@@ -25,11 +25,10 @@ To get started with SoC ProjectHub, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the necessary dependencies using npm.
-3. Start the Express server.
-4. Open the application in your web browser.
+3. Launch index.html with LiveServer or an equivalent extension
+4. Follow the instructions in the backend repository to run the full-stack application
 
 ```bash
 git clone https://github.com/adamhale-exe/soc_project_frontend.git
 cd soc_project_frontend
 npm install
-npm start
